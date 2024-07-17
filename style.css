@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main-container{
+  background: #000428;  
+  background: -webkit-linear-gradient(to right, #004e92, #000428);  
+  background: linear-gradient(to right, #004e92, #000428); 
+  width: 100vw;
+  height: 100vh;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav h1{
+  font-size: 60px;
+  color: white;
+  font-family: "Mukta", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 3px;
+  margin: 20px 0px ;
+}
+.all-shots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.all-shots img{
+  width: 100px;
+  height: 100px;
+}
+.rock, .paper, .Scissors{
+  background-color: white;
+  width: 130px;
+  height: 130px;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.rock:hover, .paper:hover, .Scissors:hover{
+  border: 1px solid white;
+  transition: all 0.3s ease-in-out;
+  background: #000428;  
+  background: -webkit-linear-gradient(to right, #004e92, #000428);  
+  background: linear-gradient(to right, #004e92, #000428); 
+  transform: scaleX(1.2) scaleY(1.2);
+}
+.rock img, .paper img, .Scissors img{
+  position: relative;
+  bottom: 4px;
+}
+
+.show-Result{
+  font-size: 25px;
+  color: white;
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 30px 0px;
+  text-align: center;
+}
+
+.user img{
+  width: 30px;
+  height: 30px;
+}
+.computer img{
+  width: 30px;
+  height: 30px;
+}
+.winner {
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.score{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.reset{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#reset-btn{
+  background: #000428;  
+  background: -webkit-linear-gradient(to right, #004e92, #000428);  
+  background: linear-gradient(to right, #004e92, #000428); 
+  color: white;
+  border: 2px solid white;
+  width: 240px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
