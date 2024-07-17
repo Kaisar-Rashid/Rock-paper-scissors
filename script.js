@@ -91,8 +91,8 @@ function resetScore() {
 function displayResult(result, UserChoice, ComputerChoice) {
   ShowResult.innerHTML = `
     <div class="winner">
-      <div class="user"> You Choose: <img src="./images/${UserChoice.toLowerCase()}.png" /> </div>
-      <div class="computer"> Computer Choose: <img src="./images/${ComputerChoice.toLowerCase()}.png" /> </div>
+      <div class="user"> You Choose: <img src="./images/${UserChoice}.png" /> </div>
+      <div class="computer"> Computer Choose: <img src="./images/${ComputerChoice}.png" /> </div>
     </div>
     <h2 class="final-Result">${
       result === "Win"
