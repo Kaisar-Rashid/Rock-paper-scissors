@@ -90,6 +90,7 @@ nav h1{
   align-items: center;
   justify-content: center;
   gap: 10px;
+  font-size: 30px;
 }
 
 .score{
@@ -114,4 +115,39 @@ nav h1{
   font-size: 25px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+
+  nav h1{
+    font-size: 40px;
+    text-align: center;
+  }
+  .rock, .paper, .Scissors{
+    width: 70px;
+    height: 70px;
+  }
+  .rock img, .paper img, .Scissors img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .all-shots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  } 
+  .winner{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size:20px ;
+  }
+  .winner .user img{
+    font-size:20px ;
+  }
+
 }
